@@ -32,9 +32,9 @@ public class Person4 {
     private String calc(String input) {
       String newName = "";
       for (int i = 0; i < input.length(); i++){
-        char newChar = (char)input.charAt(i) + 1;
+        char newChar = input.charAt(i);
+        newChar += 1;
         newName += newChar;
-        
       }
       return newName;
     }
