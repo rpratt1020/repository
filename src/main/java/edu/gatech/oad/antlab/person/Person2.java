@@ -1,4 +1,5 @@
 package edu.gatech.oad.antlab.person;
+import java.util.Collections;
 
 /**
  *  A simple class for person 2
@@ -31,7 +32,7 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return "random";
+	  return Collections.shuffle(input);
 	}
 	/**
 	 * Return a string rep of this object
