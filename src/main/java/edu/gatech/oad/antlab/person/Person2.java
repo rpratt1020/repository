@@ -40,7 +40,7 @@ public class Person2 {
 		}
 		int[] randNums = new int[input.length()];
 		for (int i = 0; i < randNums.length; i++) {
-			randNums[i] = int(Math.random() * input.length());
+			randNums[i] = (int)(Math.random() * input.length());
 		}
 		for (int x : randNums) {
 			output += arr[x];
