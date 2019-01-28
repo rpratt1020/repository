@@ -1,5 +1,4 @@
 package edu.gatech.oad.antlab.person;
-import java.util.Collections;
 
 /**
  *  A simple class for person 2
@@ -32,7 +31,21 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return Collections.shuffle(input);
+		String output = "";
+		char[] arr = new String[input.length()];
+		int i = 0;
+		for (char letter : input) {
+			arr[i] = letter;
+			i++;
+		}
+		int[] randNums = new int[input.length()];
+		for (int i = 0; i < randNums.length; i++) {
+			randNums[i] = int(Math.random() * input.length());
+		}
+		for (int x : randNums) {
+			output += arr[x];
+		}
+		return output;
 	}
 	/**
 	 * Return a string rep of this object
