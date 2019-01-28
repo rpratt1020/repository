@@ -32,18 +32,13 @@ public class Person2 {
 	private String calc(String input) {
 	  //Person 2 put your implementation here
 		String output = "";
-		char[] arr = new String[input.length()];
-		int i = 0;
-		for (char letter : input) {
-			arr[i] = letter;
-			i++;
-		}
+	
 		int[] randNums = new int[input.length()];
-		for (int i = 0; i < randNums.length; i++) {
-			randNums[i] = (int)(Math.random() * input.length());
+		for (int j = 0; j < randNums.length; j++) {
+			randNums[j] = (int)(Math.random() * input.length());
 		}
 		for (int x : randNums) {
-			output += arr[x];
+			output += input.charAt(x);
 		}
 		return output;
 	}
