@@ -45,7 +45,7 @@ public class Person3 {
 	  //Person 3 put your implementation here
 		String reverse;
 		for(int i = input.length() - 1; i >= 0; i--) {
-            reverse = reverse + str.charAt(i);
+            reverse = reverse + input.charAt(i);
         }
 	  return reverse;
 	}
